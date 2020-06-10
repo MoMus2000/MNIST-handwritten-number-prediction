@@ -1,5 +1,5 @@
 from tensorflow import keras
-model = keras.models.load_model('/Users/a./Desktop/course/mnist Model')
+model = keras.models.load_model('PATH')
 
 # import numpy as np
 from skimage import transform
