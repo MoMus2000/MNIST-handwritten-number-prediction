@@ -61,16 +61,16 @@ model.compile(loss=tf.keras.losses.categorical_crossentropy,
 from tensorflow import keras
 model2 = keras.models.load_model('/Users/a./Desktop/course/mnist Model')
 
-from PIL import Image
-import numpy as np
-from skimage import transform
-def load(filename):
-   np_image = Image.open(filename)
-   np_image = np.array(np_image).astype('float32')
-   np_image = transform.resize(np_image, (28, 28, 1))
-   np_image = np.expand_dims(np_image, axis=0)
-   np_image=np_image/255.0
-   return np_image
+# from PIL import Image
+# import numpy as np
+# from skimage import transform
+# def load(filename):
+#    np_image = Image.open(filename)
+#    np_image = np.array(np_image).astype('float32')
+#    np_image = transform.resize(np_image, (28, 28, 1))
+#    np_image = np.expand_dims(np_image, axis=0)
+#    np_image=np_image/255.0
+#    return np_image
 
-image = load('/Users/a./Downloads/1272_2280_bundle_archive/testSample/img_47.jpg')
-print(model2.predict_classes(image))
+# image = load('/Users/a./Downloads/1272_2280_bundle_archive/testSample/img_47.jpg')
+# print(model2.predict_classes(image))
