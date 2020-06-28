@@ -3,3 +3,4 @@ Model created using MNIST DATASET
 USE LOAD FILE FOR COMPILED MODEL
 OpenCV to mousedraw images for prediction.
 model accuracy 83%, train on higher epochs for greater accuracy
+# Now 99% Accurate VGG Architecture + AUGMENTATION
